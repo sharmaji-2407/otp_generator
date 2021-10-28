@@ -1,14 +1,14 @@
 import random as r
+
 i=10
 
-
-def otpgen():
-    otp=""
-    for i in range(4):
+def otpgeneration():
+    otp=" "
+    for i in range(5):
         otp+=str(r.randint(1,9))
-    print ("Your One Time Password is ")
+    print ("Your One Time Password is generated: ")
     print (otp)
-otpgen()
+otpgeneration()
 while (i>=0):
     print(r.randint(0,9000)+1000)
     i=i-1
